@@ -1,17 +1,16 @@
 declarativeToggle
 =================
 
-declrativeToggle is a jQuery snippet which makes it simple to reveal sections of content by clicking on a button (think mobile navigation menus on responsive sites).
+declrativeToggle is a jQuery snippet which makes it simple to reveal sections of content by clicking on a button (think mobile navigation menus on responsive sites). Initialize the snippet by using the data-attributes outlined below and add show/hide functionality without writing a single line of JavaScript.
 
-Listen for click events on any element (think button or span) by adding a **data-toggle-target** attrirubte and providing a CSS-esque selector as the value.
+Turn any element (think button or span) into a toggle control by adding a **data-toggle-target** attrirubte and providing a CSS-esque selector as the value.
 
 Example
 ------------
 
 ```html
 <span class="toggle-btn" data-toggle-target="#box3">Show box 3</span>
-
-<div id="box3"><p>This content is hidden by default because it is the target of a toggle button. Clicking on the above span will reveal this content.</div>
+<div id="box3"><p>This content is hidden by default because it is the target of a toggle button. Clicking on the above span will reveal this content.</p></div>
 ```
 
 CSS
@@ -65,3 +64,6 @@ Add a **data-toggle-text** attribute to the button element to alternate button t
 
 <div id="box3"><p>This content is hidden by default because it is the target of a toggle button. Clicking on the above span will reveal this content.</div>
 ```
+Accessibility
+-------------
+Do not worry about manually hiding content initially. declarativeToggle automatically adds a class of **toggle-target-hidden** to the content you want to reveal on click.  This way, if JavaScript is disabled or a file fails to load users will still see all content (and the toggle buttons will not display).
