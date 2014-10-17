@@ -61,7 +61,6 @@ Toggling the Button Text
 Add a **data-toggle-text** attribute to the button element to alternate button text during show/hide states. Example:
 ```html
 <span class="toggle-btn" data-toggle-target="#box3" data-toggle-text="Hide box 3">Show box 3</span>
-
 <div id="box3"><p>This content is hidden by default because it is the target of a toggle button. Clicking on the above span will reveal this content.</div>
 ```
 Accessibility
