@@ -8,21 +8,21 @@ declarativeToggle relies on CSS for hiding and displaying content; the script si
 This is the boilerplate CSS you can copy and paste into your stylesheet:
 
 ```css
-	.toggle-btn {
-		display: none;
-	}
+.toggle-btn {
+	display: none;
+}
 
-	.toggle-btn-visible {
-		display: block;
-	}
+.toggle-btn-visible {
+	display: block;
+}
 
-	.toggle-target-hidden {
-		display: none;
-	}
+.toggle-target-hidden {
+	display: none;
+}
 
-	.toggle-target-expanded {
-		display: block;
-	}
+.toggle-target-expanded {
+	display: block;
+}
 ```
 
 Toggling the Button Text
@@ -37,6 +37,7 @@ HTML Example
 ------------
 
 ```html
-	<span class="toggle-btn" data-toggle-target="#box3">Show box 3</span>
-	<div id="box3"><p>This content is hidden by default because it is the target of a toggle button. Clicking on the above span will reveal this content.</div>
+<span class="toggle-btn" data-toggle-target="#box3" data-toggle-text="Hide box 3">Show box 3</span>
+
+<div id="box3"><p>This content is hidden by default because it is the target of a toggle button. Clicking on the above span will reveal this content.</div>
 ```
