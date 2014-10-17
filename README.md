@@ -7,6 +7,7 @@ declarativeToggle relies on CSS for hiding and displaying content; the script si
 
 This is the boilerplate CSS you can copy and paste into your stylesheet:
 
+```css
 	.toggle-btn {
 		display: none;
 	}
@@ -22,5 +23,20 @@ This is the boilerplate CSS you can copy and paste into your stylesheet:
 	.toggle-target-expanded {
 		display: block;
 	}
-	
+```
+
+Toggling the Button Text
+------------------------
+Add a "data-toggle-text" attribute to the button element to allow the button text to switch during show/hide states.
+
+Responsive
+----------	
 Make things responsive by wrapping the final three rules in a media query.
+
+HTML Example
+------------
+
+```html
+	<span class="toggle-btn" data-toggle-target="#box3">Show box 3</span>
+	<div id="box3"><p>This content is hidden by default because it is the target of a toggle button. Clicking on the above span will reveal this content.</div>
+```
