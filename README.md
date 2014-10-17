@@ -32,6 +32,32 @@ Add a "data-toggle-text" attribute to the button element to allow the button tex
 Responsive
 ----------	
 Make things responsive by wrapping the final three rules in a media query.
+```css
+.toggle-btn {display: none;}
+
+@media screen and (max-width: 767px) {
+	.toggle-btn-visible {display: block;}
+	.toggle-target-hidden {display: none;}
+	.toggle-target-expanded {display: block;}
+}
+```
+Many Toggles and Many Breakpoints
+---------------------------------
+In the above CSS example the toggles will only display for smaller devices.  What if you had a toggle in your main column that you wanted to display even for larger devices? Simply add an ancestor selector to our boilerplate selectors:
+
+```css
+.toggle-btn {display: none;}
+
+@media screen and (max-width: 767px) {
+	.toggle-btn-visible {display: block;}
+	.toggle-target-hidden {display: none;}
+	.toggle-target-expanded {display: block;}
+}
+
+.main-area .toggle-btn-visible {display: block;}
+.main-area .toggle-target-hidden {display: none;}
+.main-area .toggle-target-expanded {display: block;}
+```
 
 HTML Example
 ------------
