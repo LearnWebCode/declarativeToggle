@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<meta charset="utf-8">
+		<title>declarativeToggle</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/screen.css">
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery.declarativeToggle.min.js"></script>
+	</head>
+	
+	<body>
+		
+		<h1>declarativeToggle</h1>
+		<p>Oh hai! This is a bare-bones demo page. declarativeToggle is a jQuery snippet which makes it simple to reveal sections of content on a click/tap event (think mobile navigation menus on responsive sites). Add show/hide functionality without writing a single line of JavaScript. Just add <strong>data-attributes</strong>.</p>
+	
+		<div class="all-devices">
+			<span class="toggle-btn" data-toggle-target="#box3" data-toggle-text"Read less">Read more</span>
+			<div id="box3" class="box">
+				<p>This content is hidden by default because it is the target of a toggle button.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis iste at, error tenetur, beatae pariatur incidunt accusantium aut odit deleniti rem. Ipsum, praesentium dicta obcaecati. Possimus nesciunt fugiat tempore vero.</p>
+			</div>
+		</div>
+		<!-- /.all-devices -->
+
+		<h2>Want a responsive demo?</h2>
+		<p>There is a toggle button below this text that will only display for small screens. You can simply wrap the default declarativeToggle CSS rules in a media query to enable this behavior.</p>
+
+		<span class="toggle-btn" data-toggle-target="#extra-text">Mobile demo</span>
+
+		<div id="extra-text" class="box">
+			<p>This text is always visible on larger screens, but must be toggled to be visible on smaller screens.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A incidunt dolores voluptate sit eum. Amet quasi incidunt voluptas, dolores tempore quas non labore vitae earum delectus rem repudiandae nostrum perspiciatis!</p>
+		</div>
+
+	</body>
+	
+</html>

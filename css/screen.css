@@ -1,0 +1,34 @@
+/* Page Specific Styles */
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 15px 30px;
+}
+
+.box {
+	background-color: #ECECEC;
+	padding: 10px 20px;
+}
+
+.toggle-btn {
+	background-color: #274E80;
+	color: #FFF;
+	display: inline-block;
+	padding: 10px 20px;
+	border-radius: 4px;
+	margin-bottom: 15px;
+}
+
+/* declarativeToggle Styles to copy and paste */
+.toggle-btn {position: absolute; visibility: hidden;}
+
+@media screen and (max-width: 767px) {
+	.toggle-btn-visible {position: static; visibility: visible;}
+	.toggle-target-hidden {display: none;}
+	.toggle-target-expanded {display: block;}
+}
+
+.all-devices .toggle-btn-visible {position: static; visibility: visible;}
+.all-devices .toggle-target-hidden {display: none;}
+.all-devices .toggle-target-expanded {display: block;}
