@@ -3,6 +3,8 @@ declarativeToggle
 
 declarativeToggle is a jQuery snippet which makes it simple to reveal sections of content on a click/tap event (think mobile navigation menus on responsive sites). Add show/hide functionality without writing a single line of JavaScript by using the data-attributes outlined below.
 
+[View GitHub Pages demo](http://learnwebcode.github.io/declarativeToggle/)
+
 Turn any element into a toggle control by adding a **data-toggle-target** attrirubte and providing a CSS-esque selector as the value.
 
 Example
