@@ -5,7 +5,7 @@ declarativeToggle is a jQuery snippet which makes it simple to reveal sections o
 
 [View GitHub Pages demo](http://learnwebcode.github.io/declarativeToggle/)
 
-Turn any element into a toggle control by adding a **data-toggle-target** attrirubte and providing a CSS-esque selector as the value.
+Turn any element into a toggle trigger by adding a **data-toggle-target** attrirubte and providing a CSS-esque selector as the value.
 
 Example
 ------------
